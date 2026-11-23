@@ -1,0 +1,2 @@
+"CFBundleDisplayName" = "PrintBridge";
+"NSLocalNetworkUsageDescription" = "PrintBridge vyhledává tiskárny v místní síti a komunikuje s nimi.";

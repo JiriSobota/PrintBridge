@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key><string>PrintBridge</string>
+    <key>CFBundleDisplayName</key><string>PrintBridge</string>
+    <key>CFBundleIdentifier</key><string>io.github.jirisobota.printbridge</string>
+    <key>CFBundleExecutable</key><string>PrintBridge</string>
+    <key>CFBundleIconFile</key><string>AppIcon</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>1.0.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>CFBundleDevelopmentRegion</key><string>en</string>
+    <key>CFBundleLocalizations</key>
+    <array>
+        <string>en</string><string>cs</string><string>de</string><string>fr</string>
+        <string>pl</string><string>ru</string><string>ja</string><string>zh-Hans</string>
+    </array>
+    <key>NSHumanReadableCopyright</key><string>© 2026 Jiří Sobota · MIT License</string>
+    <key>LSMinimumSystemVersion</key><string>14.0</string>
+    <key>LSApplicationCategoryType</key><string>public.app-category.utilities</string>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>PrintBridge finds printers on your local network and talks to them.</string>
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_pdl-datastream._tcp</string>
+        <string>_ipp._tcp</string>
+    </array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key><string>io.github.jirisobota.printbridge</string>
+            <key>CFBundleURLSchemes</key><array><string>printbridge</string></array>
+        </dict>
+    </array>
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key><string>Printable document</string>
+            <key>CFBundleTypeRole</key><string>Viewer</string>
+            <key>LSHandlerRank</key><string>Alternate</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>com.adobe.pdf</string>
+                <string>public.image</string>
+                <string>public.plain-text</string>
+                <string>public.rtf</string>
+                <string>com.apple.rtfd</string>
+                <string>org.openxmlformats.wordprocessingml.document</string>
+                <string>com.microsoft.word.doc</string>
+                <string>org.oasis-open.opendocument.text</string>
+                <string>public.html</string>
+                <string>public.content</string>
+            </array>
+        </dict>
+    </array>
+    <key>NSServices</key>
+    <array>
+        <dict>
+            <key>NSMenuItem</key><dict><key>default</key><string>Print with PrintBridge</string></dict>
+            <key>NSMessage</key><string>printFiles</string>
+            <key>NSPortName</key><string>PrintBridge</string>
+            <key>NSRequiredContext</key><dict/>
+            <key>NSSendFileTypes</key>
+            <array><string>public.content</string><string>public.data</string></array>
+        </dict>
+    </array>
+</dict>
+</plist>
